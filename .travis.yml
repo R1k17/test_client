@@ -1,5 +1,12 @@
 language: node_js
- node_js: node
- cache:
-   directories:
-     - node_modules
+node_js: node
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: LELnC1cazoH9EkPYzvpFyjzrQIlOrOibPQpSIvpzBj6sGYw/6w+REjp32kuBzfH+cDYKxw4ihAzRsuB/39vatI8kFh/l4LRYBIHhSa4D0hK1OxubdAgyaAn8zJoukicSNANIScU6+Q4DVcEg90UBiIrOQrNYsdkONVwX1BL/gEVoFJpqWQEoB5BVs9W4gRkKIuvyrDiFNxrTlT8p9sajGPbO8+HDLbiB4156gXjs7OIiS9aLbehRBgZZ9XIZ4gR9hBLkD7tc+1MVEXGfNzvxEwQOdy+5JG0Nk+bnLixT4yhKBj+YYUiktJiA2Vk4rj+CGksJLTy3SSlPHYdqPRSWR7fSmv4wzqikPPRWoiW6Ib+elG6L6X10KBUFdc/Oy6gdTvWFZ4VJim8mtzlVoQiKOE/19K2UGXs0MqaDMhBlAgL4vLiGkrb88inhNCPDIX2I/OD+vSfL5f2oJE3nqtDFf/JN0z2+6QOCCmuGqVVMhNd97YBIdVmo9RcR5nvQhLxM0nOHV2E0Dq55ZUoZRUS8S3mnIH9nE7L1+fWK4+3MXj/O0M4ibJgHs6UgaqK1la1ObV37E6DXi18Yiu2ZYetkhdqimbGO1WnnLm2bnAVPz459nSLiST/CPsVvhJN1bWft51+n5DTDK6fMxGnbbmcBfSNTTWnBA8gVYdQcuMeBrak=
+  app: safe-anchorage-32121
+  on:
+    repo: R1k17/test_client
